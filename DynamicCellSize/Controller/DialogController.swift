@@ -31,6 +31,7 @@ class DialogController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! CustomCell
         cell.messageLabel.text = messages[indexPath.row]
+        cell.isLeftSide = true
         return cell
     }
     

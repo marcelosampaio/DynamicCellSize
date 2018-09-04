@@ -12,6 +12,12 @@ class CustomCell: UITableViewCell {
 
     let messageLabel = UILabel()
     let messageBackgroundView = UIView()
+    var isLeftSide : Bool! {
+        didSet{
+            messageBackgroundView.backgroundColor = isLeftSide ? .yellow : .gray
+            messageLabel.textColor = isLeftSide ? .black : .white
+        }
+    }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
