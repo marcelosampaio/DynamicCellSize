@@ -39,6 +39,7 @@ class DialogController: UITableViewController {
         messages.append("Olá! Somos a companhia alegre de teatro e estamos em sua cidade!")
         messages.append("Estamos trazendo um lindo espetáculo chamado MOMIS que retrata o dia dia do ultimo imperador romano. Com pitadas de humor e drama é um espetáculo imperdível!")
         messages.append("Esperamos você :)")
+        messages.append("Venha!")
     }
     private func registerTableViewCell() {
         tableView.register(CustomCell.self, forCellReuseIdentifier: cellIdentifier)

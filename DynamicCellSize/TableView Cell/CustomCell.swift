@@ -45,7 +45,7 @@ class CustomCell: UITableViewCell {
         let contraints = [messageLabel.topAnchor.constraint(equalTo: topAnchor, constant: 32),
         messageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
         messageLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -32),
-        messageLabel.widthAnchor.constraint(equalToConstant: 250),
+        messageLabel.widthAnchor.constraint(lessThanOrEqualToConstant: 250),
         
         messageBackgroundView.topAnchor.constraint(equalTo: messageLabel.topAnchor, constant: -16),
         messageBackgroundView.leadingAnchor.constraint(equalTo: messageLabel.leadingAnchor, constant: -16),
