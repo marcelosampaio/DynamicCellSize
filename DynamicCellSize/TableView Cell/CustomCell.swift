@@ -61,13 +61,10 @@ class CustomCell: UITableViewCell {
         let contraints = [messageLabel.topAnchor.constraint(equalTo: topAnchor, constant: 32),
         messageLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -32),
         messageLabel.widthAnchor.constraint(lessThanOrEqualToConstant: 250),
-        
         messageBackgroundView.topAnchor.constraint(equalTo: messageLabel.topAnchor, constant: -16),
         messageBackgroundView.leadingAnchor.constraint(equalTo: messageLabel.leadingAnchor, constant: -16),
         messageBackgroundView.bottomAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: 16),
         messageBackgroundView.trailingAnchor.constraint(equalTo: messageLabel.trailingAnchor, constant: 16)
-        
-        
         ]
         
         // activate constraints
@@ -85,15 +82,5 @@ class CustomCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//    }
-//
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
 
 }

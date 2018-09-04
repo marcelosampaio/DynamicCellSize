@@ -11,7 +11,7 @@ import UIKit
 class DialogController: UITableViewController {
     
     // MARK : - Properties
-    private let cellIdentifier = "Cell"
+    private let cellIdentifier = "cellIdentifier"
     private var messages = [Message]()
     
 
@@ -50,6 +50,7 @@ class DialogController: UITableViewController {
     }
     
     private func registerTableViewCell() {
+        // if I register i get free from storyboard setting
         tableView.register(CustomCell.self, forCellReuseIdentifier: cellIdentifier)
     }
     
