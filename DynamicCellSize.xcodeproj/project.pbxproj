@@ -13,6 +13,7 @@
 		9C9A075D213CA1B200A7966E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9A075C213CA1B200A7966E /* Assets.xcassets */; };
 		9C9A0760213CA1B200A7966E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9A075E213CA1B200A7966E /* LaunchScreen.storyboard */; };
 		9C9AACFC213EC8C500991F1A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9AACFB213EC8C500991F1A /* CustomCell.swift */; };
+		9C9AACFF213EF6AF00991F1A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9AACFE213EF6AF00991F1A /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9C9A075F213CA1B200A7966E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C9A0761213CA1B200A7966E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C9AACFB213EC8C500991F1A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		9C9AACFE213EF6AF00991F1A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		9C9A0754213CA1A600A7966E /* DynamicCellSize */ = {
 			isa = PBXGroup;
 			children = (
+				9C9AACFD213EF66B00991F1A /* Model */,
 				9C9AACFA213EC86A00991F1A /* TableView Cell */,
 				9C9A0769213CA5A700A7966E /* Root */,
 				9C9A0768213CA59A00A7966E /* Controller */,
@@ -97,6 +100,14 @@
 				9C9AACFB213EC8C500991F1A /* CustomCell.swift */,
 			);
 			path = "TableView Cell";
+			sourceTree = "<group>";
+		};
+		9C9AACFD213EF66B00991F1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C9AACFE213EF6AF00991F1A /* Message.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C9A0756213CA1A600A7966E /* AppDelegate.swift in Sources */,
+				9C9AACFF213EF6AF00991F1A /* Message.swift in Sources */,
 				9C9AACFC213EC8C500991F1A /* CustomCell.swift in Sources */,
 				9C175D55213CA72B005F15C2 /* DialogController.swift in Sources */,
 			);

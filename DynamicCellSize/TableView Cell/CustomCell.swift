@@ -12,12 +12,22 @@ class CustomCell: UITableViewCell {
 
     let messageLabel = UILabel()
     let messageBackgroundView = UIView()
+    
+    var leadingConstraint : NSLayoutConstraint!
+    var trailingConstraint : NSLayoutConstraint!
+    
     var isLeftSide : Bool! {
         didSet{
             messageBackgroundView.backgroundColor = isLeftSide ? .yellow : .gray
             messageLabel.textColor = isLeftSide ? .black : .white
+            leadingConstraint.isActive = isLeftSide
+            trailingConstraint.isActive = !isLeftSide
         }
     }
+    
+    
+    
+    
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -49,7 +59,6 @@ class CustomCell: UITableViewCell {
         
         // set up constraints
         let contraints = [messageLabel.topAnchor.constraint(equalTo: topAnchor, constant: 32),
-        messageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
         messageLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -32),
         messageLabel.widthAnchor.constraint(lessThanOrEqualToConstant: 250),
         
@@ -60,14 +69,15 @@ class CustomCell: UITableViewCell {
         
         
         ]
-            
-            
-            
+        
         // activate constraints
         NSLayoutConstraint.activate(contraints)
         
+        leadingConstraint = messageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32)
+        leadingConstraint.isActive = false
         
-        
+        trailingConstraint = messageLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32)
+        trailingConstraint.isActive = true
         
     }
     
